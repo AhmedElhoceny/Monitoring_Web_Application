@@ -1,0 +1,39 @@
+﻿@using Monitoring_First_Version.Models
+@model Monitoring_First_Version.Models.Member
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/wwwroot/Style/Style.css">
+    <title>Tracker</title>
+</head>
+
+<body class="SignUpBackground" style="background-image: url('../../wwwroot/Images/WorkBackGround.jpg');background-position:center">
+    @using (Html.BeginForm("SignUpPost", "Home", FormMethod.Post))
+    {
+        <div>
+            <label>UserName</label>
+            @Html.TextBoxFor(x => x.memberName, new { @required = "required" })
+        </div>
+        <div>
+            <label>Email</label>
+            @Html.TextBoxFor(x => x.memberEmail, new { @required = "required", @type = "email" })
+        </div>
+        <div>
+            <label>Password</label>
+            @Html.TextBoxFor(x => x.memberPassword, new { @required = "required", @type = "password" })
+        </div>
+        <div>
+            <label>Phone Number</label>
+            @Html.TextBoxFor(x => x.memberPhoneNumber, new { @required = "required", @type = "tel" })
+        </div>
+
+        <button type="submit">SignUp</button>
+    }
+</body>
+
+</html>

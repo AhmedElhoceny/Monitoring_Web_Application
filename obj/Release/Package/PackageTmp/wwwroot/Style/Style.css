@@ -1,0 +1,868 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0px;
+    outline: none;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    width: 100%;
+    height: 73px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #4b81ca;
+}
+
+.nav h1 {
+    color: #fff;
+    font-size: 43px;
+    font-weight: bold;
+    margin-left: 30px;
+    align-self: center;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style: none;
+    align-self: center;
+}
+
+.nav ul li {
+    list-style: none;
+    margin-right: 45px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.MenuIcon {
+    display: none;
+}
+
+.ChooseMenu {
+    width: 158px;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: absolute;
+    top: 72px;
+    right: 0px;
+    background-color: #4b81ca;
+    color: #fff;
+    font-size: 25px;
+    height: 172px;
+    z-index: 3;
+}
+
+.ChooseMenu>ul {
+    list-style: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+}
+
+.ChooseMenu .ULChoose li {
+    list-style: none !important;
+    margin-top: 10px !important;
+}
+
+.ChooseMenu .ULChoose li a {
+    text-decoration: none !important;
+    color: #fff !important;
+    font-size: 25px !important;
+}
+
+
+/* **************************************************** */
+
+.Body1 {
+    width: 100%;
+    height: 700px;
+    background-image: url("../Images/Body1BackGround.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-position-y: center;
+}
+
+.Body1 p {
+    color: #fff;
+    font-size: 47px;
+    font-weight: 600;
+    margin-top: 20px;
+    align-self: start;
+    margin-left: 167px;
+    z-index: 2;
+}
+
+.Body1 div {
+    width: 0px;
+    height: 0;
+    border-top: 250px solid transparent;
+    border-left: 757px solid #007cffa1;
+    border-bottom: 250px solid transparent;
+    position: absolute;
+    top: 174px;
+}
+
+.Body2 {
+    width: 100%;
+    background-color: #fff;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.Body2 p {
+    color: #007cffa1;
+    font-size: 63px;
+    font-weight: 600;
+    margin-top: 20px;
+    z-index: 2;
+    align-self: center;
+}
+
+.Body2 .Teams,
+.JoinedTeam .Teams {
+    width: 80%;
+    height: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.Body2 .Teams div,
+.JoinedTeam .Teams div {
+    width: 315px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+.Body2 .Teams div img,
+.JoinedTeam .Teams div img {
+    width: 100%;
+    height: 90%;
+    border: none;
+    align-self: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.Body2 .Teams div p,
+.JoinedTeam .Teams div p {
+    color: #5eacff;
+    font-size: 28px;
+    align-self: center;
+}
+
+
+/* ************************************************ */
+
+.Body3 {
+    width: 100%;
+    background-color: #007cffa1;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.Body3>p {
+    color: #fff;
+    align-self: center;
+    margin-top: 0px;
+    font-size: 47px;
+}
+
+.Body3 .ProjectContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-self: center;
+}
+
+.Body3 .ProjectContainer p {
+    color: #fff;
+    font-size: 61px;
+}
+
+.Body3 .ProjectContainer p span {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/* ***************************************** */
+
+.ProfileBody1 {
+    width: 400px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: -259px;
+    text-align: center;
+}
+
+.ProfileBody1>img {
+    width: 250px;
+    height: 160px;
+    align-self: center;
+}
+
+.ProfileBody1>p {
+    margin-top: 5px;
+    color: #5eacff;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+
+/* **************************************** */
+
+.JoinedTeam {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.JoinedTeam>p {
+    align-self: center;
+    color: #5eacff;
+    text-align: center;
+    font-size: 61px;
+}
+
+.Good {
+    color: #15ff00;
+}
+
+.Bad {
+    color: #ff0000;
+}
+
+
+/* ******************************************** */
+
+.TasksStatistics {
+    width: 100%;
+    background-color: #09f;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.TasksStatistics>p {
+    align-self: center;
+    color: #fff;
+    text-align: center;
+    font-size: 61px;
+}
+
+.TasksStatistics>.ContainerTasks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.TasksStatistics>.ContainerTasks>div {
+    width: 200px;
+    height: 191px;
+    align-self: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.TasksStatistics>.ContainerTasks>div>p {
+    align-self: center;
+    color: #fff;
+    text-align: center;
+    font-size: 41px;
+}
+
+.TasksStatistics>.ContainerTasks>div>span {
+    align-self: center;
+    text-align: center;
+    font-size: 41px;
+}
+
+
+/* ****************************************** */
+
+.CurrentTaskController {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-self: center;
+}
+
+.CurrentTaskController .TaskMember {
+    width: 80%;
+    height: 100px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.CurrentTaskController .TaskMember>p {
+    font-size: 31px;
+    margin-left: 78px;
+    color: #09f;
+}
+
+.CurrentTaskController .TaskMember div {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.CurrentTaskController .TaskMember div div {
+    width: 100px;
+    height: 39px;
+    border-radius: 5px;
+    transition: opacity 0.3s linear;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    align-self: center;
+}
+
+.CurrentTaskController .TaskMember div div:hover {
+    opacity: 0.7;
+}
+
+
+/* ****************************************** */
+
+.SignUpBackground {
+    background-image: url("../Images/photo-1497032628192-86f99bcd76bc.webp");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0px;
+    outline: none;
+    margin: 0px;
+    height: 739px;
+}
+
+form {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 500px;
+    background-color: #006cff9e;
+    border-radius: 10px;
+    border: none;
+    margin-top: 6%;
+}
+
+form div {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+form div label {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-left: 57px;
+}
+
+form div input,
+form div select {
+    width: 80%;
+    height: 40px;
+    background-color: rgb(239, 235, 235);
+    align-self: center;
+    margin: auto;
+    margin-top: auto;
+    border-radius: 5px;
+    border: none;
+    margin-top: 11px;
+    color: #4b81ca;
+    font-size: 20px;
+}
+
+form button {
+    width: 150px;
+    height: 50px;
+    border: 3px #30d330 solid;
+    background-color: transparent;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    align-self: center;
+    margin: 22px;
+    cursor: pointer;
+    transition: background 0.3s linear;
+}
+
+form button:hover {
+    background-color: #30d330
+}
+
+
+/* ****************************************** */
+
+.JoinedTeam2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.JoinedTeam2>p {
+    align-self: center;
+    color: #5eacff;
+    text-align: center;
+    font-size: 61px;
+}
+
+.JoinedTeam2>.OurMembers {
+    width: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.JoinedTeam2>.OurMembers>.MemberDetails {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.JoinedTeam2>.OurMembers>.MemberDetails>a {
+    font-size: 30px;
+    color: #4b81ca;
+    text-decoration: none;
+    align-self: center;
+}
+
+.JoinedTeam2>.OurMembers>.MemberDetails>div {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+    .JoinedTeam2 > .OurMembers > .MemberDetails > div > button,
+    .JoinedTeam2 > .OurMembers > .MemberDetails > div > a {
+        width: 95px;
+        height: 40px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 22px;
+        text-align: center;
+        border: none;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+
+/* *************************************** */
+
+.EditData {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 860px;
+    background-color: #006cff9e;
+    border-radius: 10px;
+    border: none;
+    margin-top: 6%;
+    padding: 30px;
+}
+
+.EditData div label {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-left: 82px;
+}
+
+
+/* ***************************************** */
+
+.Selected {
+    border: 5px solid #f00 !important;
+}
+
+.JoinedTeam>button {
+    width: 171px;
+    height: 60px;
+    background-color: #007cff;
+    border: none;
+    color: #fff;
+    font-size: 27px;
+    border-radius: 13px;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 45px;
+}
+
+.EditData>div>textarea {
+    width: 80%;
+    background-color: rgb(239, 235, 235);
+    align-self: center;
+    margin: auto;
+    margin-top: auto;
+    margin-top: auto;
+    margin-top: auto;
+    border-radius: 5px;
+    border: none;
+    margin-top: 11px;
+    color: #4b81ca;
+    font-size: 20px;
+}
+.ResultMessage {
+    width: 229px;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    left: 40%;
+    transition: top 0.3s linear;
+    border-radius: 32px;
+}
+
+    .ResultMessage p {
+        align-self: center;
+        margin: auto;
+        font-size: 45px;
+    }
+
+/* ****************************************** */
+
+@media only screen and (max-width: 768px) {
+    .Body2 .Teams div {
+        width: 315px;
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .MenuIcon {
+        display: none;
+    }
+    svg {
+        position: relative;
+    }
+    .ProfileBody1 {
+        width: 400px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        text-align: center;
+        margin-top: -117px;
+    }
+    .TasksStatistics>.ContainerTasks {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+    .Body2 .Teams div,
+    .JoinedTeam .Teams div {
+        width: 315px;
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .CurrentTaskController {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-self: center;
+    }
+    .CurrentTaskController .TaskMember {
+        width: 80%;
+        height: 100px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 3%;
+    }
+    .CurrentTaskController .TaskMember>p {
+        font-size: 31px;
+        color: #09f;
+        align-self: center;
+        margin-left: 0px;
+    }
+    .CurrentTaskController .TaskMember div {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+    .JoinedTeam2>.OurMembers>.MemberDetails {
+        width: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .EditData {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 617px;
+        background-color: #006cff9e;
+        border-radius: 10px;
+        border: none;
+        margin-top: 6%;
+        padding: 30px;
+    }
+    .EditData div label {
+        color: rgb(255, 255, 255);
+        font-size: 29px;
+        margin-left: 62px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Body1 div {
+        width: 100%;
+        height: 0;
+        position: absolute;
+        top: 174px;
+        left: 0px;
+        display: none;
+    }
+    .Body1 p {
+        color: #4b81ca;
+        font-size: 47px;
+        font-weight: 600;
+        margin-top: 20px;
+        align-self: center;
+        margin-left: 167px;
+        z-index: 2;
+        margin: auto;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        list-style: none;
+        align-self: center;
+        display: none;
+    }
+    .MenuIcon {
+        display: block;
+        cursor: pointer;
+    }
+    .ProfileBody1 {
+        width: 400px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        text-align: center;
+        margin-top: -65px;
+    }
+    .TasksStatistics>.ContainerTasks {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+    .Body2 .Teams div,
+    .JoinedTeam .Teams div {
+        width: 315px;
+        height: 265px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .CurrentTaskController {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-self: center;
+    }
+    .CurrentTaskController .TaskMember {
+        width: 80%;
+        height: 100px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: auto;
+        margin-bottom: 9%;
+    }
+    .CurrentTaskController .TaskMember>p {
+        font-size: 24px;
+        color: #09f;
+        align-self: center;
+        margin-left: 0px;
+    }
+    .CurrentTaskController .TaskMember div {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+    form {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 328px;
+        background-color: #006cff9e;
+        border-radius: 10px;
+        border: none;
+        margin-top: 6%;
+    }
+    .JoinedTeam2>.OurMembers>.MemberDetails {
+        width: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .JoinedTeam2>.OurMembers>.MemberDetails>div {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .JoinedTeam2>.OurMembers>.MemberDetails>div>button {
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 22px;
+        text-align: center;
+        border: none;
+        margin-right: 10px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    .EditData {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 267px;
+        background-color: #006cff9e;
+        border-radius: 10px;
+        border: none;
+        margin-top: 6%;
+        padding: 30px;
+    }
+}

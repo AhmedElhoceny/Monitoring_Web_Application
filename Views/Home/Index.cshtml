@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/wwwroot/Style/Style.css">
+    <title>Tracker</title>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>Tracker</h1>
+        <ul>
+            <li>@Html.ActionLink("Home", "Index", "Home", null, null)</li>
+            <li>@Html.ActionLink("Community", "Index", "Home", null, null)</li>
+            <li>@Html.ActionLink("LogIn", "LogIn", "Home", null, null)</li>
+            <li>@Html.ActionLink("SignUp", "SignUp", "Home", null, null)</li>
+        </ul>
+        <img onclick="ShowMenuChoose()" class="MenuIcon" src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png" />
+        <div class="ChooseMenu">
+            <ul class="ULChoose">
+                <li style="margin-top: -27px !important;">
+                    @Html.ActionLink("Home", "Index", "Home", null, null)
+                </li>
+                <li>
+                    @Html.ActionLink("Community", "Index", "Home", null, null)
+                </li>
+                <li>
+                    @Html.ActionLink("LogIn", "LogIn", "Home", null, null)
+                </li>
+                <li>
+                    @Html.ActionLink("SignUp", "SignUp", "Home", null, null)
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="Body1" onclick="HideMeniChoose()">
+        <p>Welcome <br> To Our Project Site</p>
+        <div class="Body1Show"></div>
+    </div>
+
+    <div class="Body2">
+        <p>Teams</p>
+        <div class="Teams">
+            <div>
+                <img src="~/wwwroot/Images/admin-settings-male.png">
+                <p>The Admin</p>
+            </div>
+            <div>
+                <img src="~/wwwroot/Images/Programmers.jpg">
+                <p>Programmers</p>
+            </div>
+            <div>
+                <img src="~/wwwroot/Images/MachineLearning.png">
+                <p>MachineLearning</p>
+            </div>
+            <div>
+                <img src="~/wwwroot/Images/IOT.jpg">
+                <p>IOT</p>
+            </div>
+            <div>
+                <img src="~/wwwroot/Images/EmbeddedSystems.jpg">
+                <p>EmbeddedSystems</p>
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#007cffa1" fill-opacity="1" d="M0,224L40,197.3C80,171,160,117,240,128C320,139,400,213,480,234.7C560,256,640,224,720,181.3C800,139,880,85,960,96C1040,107,1120,181,1200,218.7C1280,256,1360,256,1400,256L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+    </svg>
+    <div class="Body3">
+        <p>The Project</p>
+        <div class="ProjectContainer">
+            <p>
+                Project Details : <span>
+                    Life Monitoring Collecting the data about the client in the water like medical state and position then send it to the server then the server do data processing to Detect the client State then if the client is in problem
+                    in the water the server will send a command to the boat to go to the client by Machine Language Algorithm
+                </span>
+            </p>
+            <p>Used Technologies : <span>(ASP.NET RestAPI) - (Image Processing) - <br>(MOT [Master Of Thengs]) - (AVR MicroController)</span></p>
+        </div>
+    </div>
+    <script src="~/wwwroot/Script/Script1.js"></script>
+</body>
+</html>

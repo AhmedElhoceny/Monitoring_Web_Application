@@ -1,0 +1,78 @@
+﻿@model Monitoring_First_Version.Models.Member
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/wwwroot/Style/Style.css">
+    <title>Tracker</title>
+</head>
+
+<body>
+    <div class="nav" style="background-color: #09f;">
+        <h1>Tracker</h1>
+        <ul>
+            <li>@Html.ActionLink("Home", "Index", "Home", null, null)</li>
+            <li>@Html.ActionLink("Community", "Index", "Home", null, null)</li>
+            <li>@Html.ActionLink("LogIn", "LogIn", "Home", null, null)</li>
+            <li>@Html.ActionLink("SignUp", "SignUp", "Home", null, null)</li>
+        </ul>
+        <img onclick="ShowMenuChoose()" class="MenuIcon" src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png" />
+        <div class="ChooseMenu">
+            <ul class="ULChoose">
+                <li style="margin-top: -27px !important;">
+                    @Html.ActionLink("Home", "Index", "Home", null, null)
+                </li>
+                <li>
+                    @Html.ActionLink("Community", "Index", "Home", null, null)
+                </li>
+                <li>
+                    @Html.ActionLink("LogIn", "LogIn", "Home", null, null)
+                </li>
+                <li>
+                    @Html.ActionLink("SignUp", "SignUp", "Home", null, null)
+                </li>
+            </ul>
+        </div>
+    </div>
+    <svg onclick="HideMeniChoose()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="1" d="M0,224L120,192C240,160,480,96,720,106.7C960,117,1200,203,1320,245.3L1440,288L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+    </svg>
+    <div onclick="HideMeniChoose()" class="ProfileBody1">
+        <img src="~/wwwroot/Images/Person.png">
+        <p>@Model.memberName</p>
+    </div>
+    @using (Html.BeginForm("EditMmeberPost", "Home", FormMethod.Post))
+    {
+        @Html.TextBoxFor(x => x.id, new { @required = "required", @type = "hidden" })
+        @Html.TextBoxFor(x => x.memberJoinedTeaams, new { @required = "required", @type = "hidden" })
+        @Html.TextBoxFor(x => x.memberTasks, new { @required = "required", @type = "hidden" })
+        @Html.TextBoxFor(x => x.Accepted , new { @required = "required", @type = "hidden" })
+        <div>
+            <label>UserName</label>
+            @Html.TextBoxFor(x => x.memberName, new { @required = "required" })
+        </div>
+        <div>
+            <label>Email</label>
+            @Html.TextBoxFor(x => x.memberEmail, new { @required = "required", @type = "email" })
+        </div>
+        <div>
+            <label>Password</label>
+            @Html.TextBoxFor(x => x.memberPassword, new { @required = "required", @type = "password" })
+        </div>
+        <div>
+            <label>Rating</label>
+            @Html.TextBoxFor(x => x.memberRank, new { @required = "required", @type = "number" })
+        </div>
+        <button type="submit">Edit</button>
+    }
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,133.3C840,107,960,117,1080,138.7C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+
+    <script src="~/wwwroot/Script/Script1.js"></script>
+</body>
+
+</html>
